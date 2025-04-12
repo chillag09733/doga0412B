@@ -11,5 +11,5 @@ Route::get('/user', function (Request $request) {
 Route::get('/tevekenysegs', [TevekenysegController::class, 'index']);
 Route::get('/tevekenysegs/{katId}/kategorias', [TevekenysegController::class, 'getKategoriaId']);
 Route::post('/tevekenysegs', [TevekenysegController::class, 'store']);
-Route::delete('/tevekenysegs', [TevekenysegController::class, 'destroy']);
+Route::delete('/tevekenysegs/{id}', [TevekenysegController::class, 'destroy']);
 Route::put('/tevekenysegs', [TevekenysegController::class, 'update']);
